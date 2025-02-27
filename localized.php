@@ -43,10 +43,10 @@ $faker = Faker\Factory::create('en_PH');
                 <tr>
                     <td><?= htmlspecialchars($faker->name) ?></td>
                     <td><?= htmlspecialchars($faker->email) ?></td>
-                    <td><?= htmlspecialchars($faker->phoneNumber) ?></td>
+                    <td><?= htmlspecialchars('+63' . $faker->numerify('9## ### ####')) ?></td>
                     <td><?= htmlspecialchars($faker->address) ?></td>
                     <td><?= htmlspecialchars($faker->date('Y-m-d H:i:s')) ?></td>
-                    <td><?= htmlspecialchars($faker->job) ?></td>
+                    <td><?= htmlspecialchars($faker->title) ?></td>
                 </tr>
         <?php endfor; ?>
         </tbody>
