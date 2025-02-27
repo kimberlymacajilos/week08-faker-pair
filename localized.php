@@ -39,7 +39,7 @@ $faker = Faker\Factory::create('en_PH');
             </tr>
         </thead>
         <tbody>
-        <?php for ($i = 1; $i <=50; $i++): ?>
+        <?php for ($i = 1; $i <=5; $i++): ?>
                 <tr>
                     <td><?= htmlspecialchars($faker->name) ?></td>
                     <td><?= htmlspecialchars($faker->email) ?></td>
