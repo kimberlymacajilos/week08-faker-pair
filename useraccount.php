@@ -3,7 +3,6 @@ require 'vendor/autoload.php';
 
 $faker = Faker\Factory::create('en_PH');
 
-
 ?>
 
 <!DOCTYPE html>
@@ -48,7 +47,7 @@ $faker = Faker\Factory::create('en_PH');
                     <td><?= htmlspecialchars($faker->email) ?></td>
                     <td><?= htmlspecialchars(explode('@', $faker->email)[0])?></td>
                     <td><?= htmlspecialchars($faker->sha256()) ?></td>
-                    <td><?= htmlspecialchars($faker->dateTimeBetween('-2 years', 'now')) ?></td>
+                    <td><?= htmlspecialchars($faker->dateTimeBetween('-2 years', 'now')->format('Y-m-d')) ?></td>
                 </tr> 
         <?php endfor; ?>
         </tbody>
